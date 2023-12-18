@@ -67,7 +67,7 @@ class ChartState extends State<Chart> {
 
   @override
   Widget build(BuildContext context) {
-    return SfCartesianChart(series: <ChartSeries<SalesData, num>>[
+    return SfCartesianChart(series: <SplineSeries<SalesData, num>>[
       SplineSeries<SalesData, num>(
           animationDuration: 0,
           dataSource: salesData,
@@ -138,8 +138,3 @@ class CRUDOperationsState extends State<CRUDOperations> {
     return min + random.nextInt(max - min);
   }
 }
-
-
-
-
-
